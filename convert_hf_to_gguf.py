@@ -9489,7 +9489,6 @@ class Cohere2Model(TextModel):
         yield from super().modify_tensors(data_torch, name, bid)
 
 
-
 @ModelBase.register("Cohere2MoeForCausalLM")
 class Cohere2MoeModel(TextModel):
     """Cohere2 MoE (North Mini Code). Ported from mainline conversion/command_r.py.
